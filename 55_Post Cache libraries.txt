@@ -1,0 +1,3 @@
+2020-05-08T06:01:13.1108209Z Post job cleanup.
+2020-05-08T06:01:13.2942689Z [command]C:\windows\System32\tar.exe -cz -f D:\a\_temp\fe80723c-ae0d-478e-8dec-47dc86ddb0aa\cache.tgz -C D:\a\crystal\crystal\libs .
+2020-05-08T06:01:13.5386926Z Cache saved successfully

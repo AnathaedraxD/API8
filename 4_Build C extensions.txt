@@ -1,0 +1,8 @@
+2020-05-08T04:51:04.1984142Z ##[group]Run make deps
+2020-05-08T04:51:04.1984368Z [36;1mmake deps[0m
+2020-05-08T04:51:04.1986507Z shell: sh -e {0}
+2020-05-08T04:51:04.1986627Z ##[endgroup]
+2020-05-08T04:51:04.5112832Z [33mUsing /usr/bin/llvm-config-8 [version=8.0.0][0m
+2020-05-08T04:51:04.5141470Z g++ -c  -o src/llvm/ext/llvm_ext.o src/llvm/ext/llvm_ext.cc -I/usr/lib/llvm-8/include -std=c++11  -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+2020-05-08T04:51:07.8321433Z cc -fPIC    -c -o src/ext/sigfault.o src/ext/sigfault.c
+2020-05-08T04:51:07.8676906Z ar -rcs src/ext/libcrystal.a src/ext/sigfault.o

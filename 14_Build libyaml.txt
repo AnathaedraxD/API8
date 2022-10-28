@@ -1,0 +1,171 @@
+2020-05-08T04:56:36.7818888Z ##[group]Run cmake . -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded
+2020-05-08T04:56:36.7819230Z [36;1mcmake . -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded[0m
+2020-05-08T04:56:36.7819349Z [36;1mcmake --build . --config Release[0m
+2020-05-08T04:56:36.7859201Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2020-05-08T04:56:36.7859331Z env:
+2020-05-08T04:56:36.7860061Z   INCLUDE: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt
+2020-05-08T04:56:36.7860383Z   LIB: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\lib\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64;
+2020-05-08T04:56:36.7860616Z   LIBPATH: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0;C:\windows\Microsoft.NET\Framework64\v4.0.30319;
+2020-05-08T04:56:36.7861756Z   Path: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\vs2019\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\vs2019\;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\FSharp\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\\MSBuild\Current\Bin;C:\windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\;C:\Program Files\Mercurial\;C:\ProgramData\kind;C:\vcpkg;C:\cf-cli;C:\Program Files (x86)\NSIS\;C:\Program Files\Mercurial\;C:\Program Files\dotnet;C:\mysql-5.7.21-winx64\bin;C:\Program Files\Java\zulu-8-azure-jdk_8.40.0.25-8.0.222-win_x64\bin;C:\SeleniumWebDrivers\GeckoDriver;C:\Program Files (x86)\sbt\bin;C:\Rust\.cargo\bin;C:\Go1.14.2\bin;C:\Program Files\Git\bin;C:\hostedtoolcache\windows\Python\3.7.7\x64\Scripts;C:\hostedtoolcache\windows\Python\3.7.7\x64;C:\hostedtoolcache\windows\Ruby\2.5.8\x64\bin;C:\npm\prefix;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\ProgramData\Chocolatey\bin;C:\Program Files\Docker;C:\Program Files\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\OpenSSL\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\Subversion\bin;C:\SeleniumWebDrivers\ChromeDriver\;C:\SeleniumWebDrivers\EdgeDriver\;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3\bin;C:\Program Files\CMake\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\Linux\bin\ConnectionManagerExe
+2020-05-08T04:56:36.7864103Z   Platform: x64
+2020-05-08T04:56:36.7864262Z   PSModulePath: C:\Modules\azurerm_2.1.0;C:\Modules\azure_2.1.0;C:\Users\packer\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\Microsoft SQL Server\130\Tools\PowerShell\Modules\
+2020-05-08T04:56:36.7864444Z   VCToolsInstallDir: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\
+2020-05-08T04:56:36.7864578Z   VCToolsRedistDir: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Redist\MSVC\14.25.28508\
+2020-05-08T04:56:36.7864675Z   VCToolsVersion: 14.25.28610
+2020-05-08T04:56:36.7864781Z   VSCMD_ARG_app_plat: Desktop
+2020-05-08T04:56:36.7864880Z   VSCMD_ARG_HOST_ARCH: x64
+2020-05-08T04:56:36.7864985Z   VSCMD_ARG_TGT_ARCH: x64
+2020-05-08T04:56:36.7865060Z   VSCMD_VER: 16.5.4
+2020-05-08T04:56:36.7865184Z   WindowsLibPath: C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0
+2020-05-08T04:56:36.7865317Z   WindowsSdkBinPath: C:\Program Files (x86)\Windows Kits\10\bin\
+2020-05-08T04:56:36.7865440Z   WindowsSdkDir: C:\Program Files (x86)\Windows Kits\10\
+2020-05-08T04:56:36.7865600Z   WindowsSDKLibVersion: 10.0.18362.0\
+2020-05-08T04:56:36.7865689Z   WindowsSdkVerBinPath: C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\
+2020-05-08T04:56:36.7865804Z   WindowsSDKVersion: 10.0.18362.0\
+2020-05-08T04:56:36.7865926Z   WindowsSDK_ExecutablePath_x64: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\
+2020-05-08T04:56:36.7866287Z   WindowsSDK_ExecutablePath_x86: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\
+2020-05-08T04:56:36.7866424Z ##[endgroup]
+2020-05-08T04:56:37.1844460Z -- Building for: Visual Studio 16 2019
+2020-05-08T04:56:38.3431606Z -- The C compiler identification is MSVC 19.25.28614.0
+2020-05-08T04:56:38.3857243Z -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.25.28610/bin/Hostx64/x64/cl.exe
+2020-05-08T04:56:39.2737380Z -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.25.28610/bin/Hostx64/x64/cl.exe - works
+2020-05-08T04:56:39.2760868Z -- Detecting C compiler ABI info
+2020-05-08T04:56:40.1429361Z -- Detecting C compiler ABI info - done
+2020-05-08T04:56:40.1733541Z -- Detecting C compile features
+2020-05-08T04:56:40.1741214Z -- Detecting C compile features - done
+2020-05-08T04:56:40.6098496Z -- Configuring done
+2020-05-08T04:56:40.7409842Z -- Generating done
+2020-05-08T04:56:40.7434750Z -- Build files have been written to: D:/a/crystal/crystal/libyaml
+2020-05-08T04:56:40.8877785Z Microsoft (R) Build Engine version 16.5.0+d4cbfca49 for .NET Framework
+2020-05-08T04:56:40.8878449Z Copyright (C) Microsoft Corporation. All rights reserved.
+2020-05-08T04:56:40.8878646Z 
+2020-05-08T04:56:41.2825993Z   Checking Build System
+2020-05-08T04:56:41.5178953Z   Building Custom Rule D:/a/crystal/crystal/libyaml/CMakeLists.txt
+2020-05-08T04:56:41.6712071Z   api.c
+2020-05-08T04:56:41.7518662Z D:\a\crystal\crystal\libyaml\src\api.c(66,27): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details. [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7520205Z D:\a\crystal\crystal\libyaml\src\api.c(848,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7520575Z D:\a\crystal\crystal\libyaml\src\api.c(1219,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7520863Z D:\a\crystal\crystal\libyaml\src\api.c(1231,55): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7521133Z D:\a\crystal\crystal\libyaml\src\api.c(1276,55): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7521429Z D:\a\crystal\crystal\libyaml\src\api.c(1321,55): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.7521633Z   dumper.c
+2020-05-08T04:56:41.7827080Z   emitter.c
+2020-05-08T04:56:41.8304709Z   loader.c
+2020-05-08T04:56:41.8610467Z D:\a\crystal\crystal\libyaml\src\loader.c(396,72): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.8612993Z D:\a\crystal\crystal\libyaml\src\loader.c(443,72): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.8618491Z D:\a\crystal\crystal\libyaml\src\loader.c(511,72): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.8653945Z   parser.c
+2020-05-08T04:56:41.9037880Z   reader.c
+2020-05-08T04:56:41.9359894Z   scanner.c
+2020-05-08T04:56:41.9689308Z D:\a\crystal\crystal\libyaml\src\scanner.c(1231,32): warning C4244: '=': conversion from 'ptrdiff_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\yaml.vcxproj]
+2020-05-08T04:56:41.9873875Z   writer.c
+2020-05-08T04:56:42.0221366Z   Generating Code...
+2020-05-08T04:56:43.3365742Z   yaml.vcxproj -> D:\a\crystal\crystal\libyaml\Release\yaml.lib
+2020-05-08T04:56:43.3862443Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:43.4691277Z   example-deconstructor.c
+2020-05-08T04:56:43.5182205Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor.c(591,59): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\example-deconstructor.vcxproj]
+2020-05-08T04:56:43.8861555Z   example-deconstructor.vcxproj -> D:\a\crystal\crystal\libyaml\Release\example-deconstructor.exe
+2020-05-08T04:56:43.9644058Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:44.0604507Z   example-deconstructor-alt.c
+2020-05-08T04:56:44.1066946Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(418,55): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1067906Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1111230Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1136026Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1147424Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1147864Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 5 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1148196Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1148508Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1148814Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(717,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1149106Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(724,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1149394Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(724,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1150001Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(724,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1150464Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(724,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1150754Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1151034Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1151405Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1151904Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1152217Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 5 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1152411Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1152624Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1152806Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(732,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1152983Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(739,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1153166Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(739,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1153352Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(739,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.1153526Z D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.c(739,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-deconstructor-alt.vcxproj]
+2020-05-08T04:56:44.3664525Z   example-deconstructor-alt.vcxproj -> D:\a\crystal\crystal\libyaml\Release\example-deconstructor-alt.exe
+2020-05-08T04:56:44.4478961Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:44.5298203Z   example-reformatter.c
+2020-05-08T04:56:44.7604336Z   example-reformatter.vcxproj -> D:\a\crystal\crystal\libyaml\Release\example-reformatter.exe
+2020-05-08T04:56:44.8430032Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:44.9303282Z   example-reformatter-alt.c
+2020-05-08T04:56:44.9750250Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(127,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9758570Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(127,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9774368Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9779628Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9780329Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9780765Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9781136Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 5 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9781556Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9781938Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9782336Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(134,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9782732Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(141,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9783128Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(141,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9783511Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(141,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9783891Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(141,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9784268Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9784864Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9785243Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9785618Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9785989Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 5 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9787930Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9788352Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9788880Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(149,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9789226Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(156,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9789668Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(156,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9789879Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(156,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790045Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(156,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790219Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790397Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790563Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790722Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9790890Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 5 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9791445Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9791625Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 6 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9791786Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(164,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9791954Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(171,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9792193Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(171,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9792359Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(171,33): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 3 has type 'size_t' [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:44.9792639Z D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.c(171,33): message : consider using '%zu' in the format string [D:\a\crystal\crystal\libyaml\tests\example-reformatter-alt.vcxproj]
+2020-05-08T04:56:45.1881169Z   example-reformatter-alt.vcxproj -> D:\a\crystal\crystal\libyaml\Release\example-reformatter-alt.exe
+2020-05-08T04:56:45.2569492Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:45.3403889Z   run-dumper.c
+2020-05-08T04:56:45.4010793Z D:\a\crystal\crystal\libyaml\tests\run-dumper.c(32,78): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\run-dumper.vcxproj]
+2020-05-08T04:56:45.4011689Z D:\a\crystal\crystal\libyaml\tests\run-dumper.c(56,70): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\run-dumper.vcxproj]
+2020-05-08T04:56:45.4012099Z D:\a\crystal\crystal\libyaml\tests\run-dumper.c(64,70): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\run-dumper.vcxproj]
+2020-05-08T04:56:45.7641161Z   run-dumper.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-dumper.exe
+2020-05-08T04:56:45.8490459Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:45.9471530Z   run-emitter.c
+2020-05-08T04:56:46.0071199Z D:\a\crystal\crystal\libyaml\tests\run-emitter.c(46,51): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data [D:\a\crystal\crystal\libyaml\tests\run-emitter.vcxproj]
+2020-05-08T04:56:46.2239873Z   run-emitter.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-emitter.exe
+2020-05-08T04:56:46.3063538Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:46.3953374Z   run-emitter-test-suite.c
+2020-05-08T04:56:46.6608274Z   run-emitter-test-suite.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-emitter-test-suite.exe
+2020-05-08T04:56:46.7416002Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:46.8231272Z   run-loader.c
+2020-05-08T04:56:47.0579826Z   run-loader.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-loader.exe
+2020-05-08T04:56:47.1471444Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:47.2297392Z   run-parser.c
+2020-05-08T04:56:47.4562178Z   run-parser.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-parser.exe
+2020-05-08T04:56:47.5325307Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:47.6286003Z   run-parser-test-suite.c
+2020-05-08T04:56:47.8646731Z   run-parser-test-suite.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-parser-test-suite.exe
+2020-05-08T04:56:47.9672229Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:48.0508864Z   run-scanner.c
+2020-05-08T04:56:48.2804470Z   run-scanner.vcxproj -> D:\a\crystal\crystal\libyaml\Release\run-scanner.exe
+2020-05-08T04:56:48.3584080Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:48.4417975Z   test-reader.c
+2020-05-08T04:56:48.6933417Z   test-reader.vcxproj -> D:\a\crystal\crystal\libyaml\Release\test-reader.exe
+2020-05-08T04:56:48.7751775Z   Building Custom Rule D:/a/crystal/crystal/libyaml/tests/CMakeLists.txt
+2020-05-08T04:56:48.8676679Z   test-version.c
+2020-05-08T04:56:49.1019758Z   test-version.vcxproj -> D:\a\crystal\crystal\libyaml\Release\test-version.exe
+2020-05-08T04:56:49.1606090Z   Building Custom Rule D:/a/crystal/crystal/libyaml/CMakeLists.txt

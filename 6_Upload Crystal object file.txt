@@ -1,0 +1,10 @@
+2020-05-08T04:52:29.7072965Z ##[group]Run actions/upload-artifact@v1
+2020-05-08T04:52:29.7073123Z with:
+2020-05-08T04:52:29.7073231Z   name: objs
+2020-05-08T04:52:29.7073334Z   path: crystal.o
+2020-05-08T04:52:29.7073417Z ##[endgroup]
+2020-05-08T04:52:29.9343266Z Uploading artifact 'objs' from '/home/runner/work/crystal/crystal/crystal.o' for run #1
+2020-05-08T04:52:30.0143048Z Uploading 1 files
+2020-05-08T04:52:34.2060254Z File upload complete.
+2020-05-08T04:52:34.2065406Z Uploaded '35086341' bytes from '/home/runner/work/crystal/crystal/crystal.o' to server
+2020-05-08T04:52:34.4207583Z Associated artifact objs (2253755) with run #1

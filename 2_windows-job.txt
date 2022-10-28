@@ -1,0 +1,8 @@
+2020-05-08T04:52:38.6808163Z ##[section]Starting: Prepare job windows-job
+2020-05-08T04:52:38.6968719Z Evaluating strategy
+2020-05-08T04:52:38.6968865Z Creating job '__default'
+2020-05-08T04:52:38.6969125Z Evaluating timeout
+2020-05-08T04:52:38.6969154Z Evaluating cancel timeout
+2020-05-08T04:52:38.6969160Z Evaluating continue on error
+2020-05-08T04:52:38.6969168Z Evaluating target
+2020-05-08T04:52:38.7008301Z ##[section]Finishing: Prepare job windows-job

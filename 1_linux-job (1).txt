@@ -1,0 +1,8 @@
+2020-05-08T04:50:25.0564211Z ##[section]Starting: Prepare job linux-job
+2020-05-08T04:50:25.0853513Z Evaluating strategy
+2020-05-08T04:50:25.0853817Z Creating job '__default'
+2020-05-08T04:50:25.0854689Z Evaluating timeout
+2020-05-08T04:50:25.0854701Z Evaluating cancel timeout
+2020-05-08T04:50:25.0854710Z Evaluating continue on error
+2020-05-08T04:50:25.0854734Z Evaluating target
+2020-05-08T04:50:25.0910593Z ##[section]Finishing: Prepare job linux-job

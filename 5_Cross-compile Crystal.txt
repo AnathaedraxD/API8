@@ -1,0 +1,5 @@
+2020-05-08T04:51:07.9073384Z ##[group]Run LLVM_TARGETS=X86 bin/crystal build --cross-compile --target x86_64-pc-windows-msvc src/compiler/crystal.cr -Dwithout_playground
+2020-05-08T04:51:07.9073625Z [36;1mLLVM_TARGETS=X86 bin/crystal build --cross-compile --target x86_64-pc-windows-msvc src/compiler/crystal.cr -Dwithout_playground[0m
+2020-05-08T04:51:07.9074024Z shell: sh -e {0}
+2020-05-08T04:51:07.9074129Z ##[endgroup]
+2020-05-08T04:52:29.6166870Z cl "crystal.o" "/Fecrystal"  /__w/crystal/crystal/src/llvm/ext/llvm_ext.o `"/usr/bin/llvm-config-8" --libs --system-libs --ldflags` pcre.lib gc.lib advapi32.lib legacy_stdio_definitions.lib libcmt.lib 

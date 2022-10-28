@@ -1,0 +1,137 @@
+2020-05-08T04:50:25.4003026Z ##[section]Starting: Request a runner to run this job
+2020-05-08T04:50:25.9520436Z Requesting a hosted runner in current repository's account/organization with labels: 'ubuntu-latest', require runner match: True
+2020-05-08T04:50:26.3334322Z Labels matched hosted runners has been found, waiting for one of them get assigned for this job.
+2020-05-08T04:50:26.3780841Z ##[section]Finishing: Request a runner to run this job
+2020-05-08T04:50:37.9012031Z Current runner version: '2.169.1'
+2020-05-08T04:50:37.9034096Z ##[group]Operating System
+2020-05-08T04:50:37.9034686Z Ubuntu
+2020-05-08T04:50:37.9034869Z 18.04.4
+2020-05-08T04:50:37.9035000Z LTS
+2020-05-08T04:50:37.9035176Z ##[endgroup]
+2020-05-08T04:50:37.9035363Z ##[group]Virtual Environment
+2020-05-08T04:50:37.9035568Z Environment: ubuntu-18.04
+2020-05-08T04:50:37.9035705Z Version: 20200430.1
+2020-05-08T04:50:37.9036003Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20200430.1/images/linux/Ubuntu1804-README.md
+2020-05-08T04:50:37.9036289Z ##[endgroup]
+2020-05-08T04:50:37.9037198Z Prepare workflow directory
+2020-05-08T04:50:37.9247083Z Prepare all required actions
+2020-05-08T04:50:37.9258511Z Download action repository 'actions/checkout@v2'
+2020-05-08T04:50:39.8999613Z Download action repository 'actions/upload-artifact@v1'
+2020-05-08T04:50:40.0327177Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2020-05-08T04:50:40.4835295Z '1.40'
+2020-05-08T04:50:40.4858943Z Docker daemon API version: '1.40'
+2020-05-08T04:50:40.4859279Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2020-05-08T04:50:40.5212160Z '1.40'
+2020-05-08T04:50:40.5215829Z Docker client API version: '1.40'
+2020-05-08T04:50:40.5226731Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=c27d31"
+2020-05-08T04:50:40.5958263Z ##[command]/usr/bin/docker network prune --force --filter "label=c27d31"
+2020-05-08T04:50:40.6276549Z ##[command]/usr/bin/docker network create --label c27d31 github_network_a93b7c5c24d7434883547ea4e60b5328
+2020-05-08T04:50:40.7044709Z 302c2b53c876a1f3988e967db21dba02a84f2e69f7d3a385637c189db63a57dd
+2020-05-08T04:50:40.7075634Z ##[command]/usr/bin/docker pull crystallang/crystal:0.34.0-build
+2020-05-08T04:50:40.9333571Z 0.34.0-build: Pulling from crystallang/crystal
+2020-05-08T04:50:40.9333881Z 5bed26d33875: Pulling fs layer
+2020-05-08T04:50:40.9334058Z f11b29a9c730: Pulling fs layer
+2020-05-08T04:50:40.9334206Z 930bda195c84: Pulling fs layer
+2020-05-08T04:50:40.9334390Z 78bf9a5ad49e: Pulling fs layer
+2020-05-08T04:50:40.9334553Z e27d61588c18: Pulling fs layer
+2020-05-08T04:50:40.9334710Z 54180f302435: Pulling fs layer
+2020-05-08T04:50:40.9334857Z dcf5ae09f64e: Pulling fs layer
+2020-05-08T04:50:40.9335018Z 78bf9a5ad49e: Waiting
+2020-05-08T04:50:40.9335176Z e27d61588c18: Waiting
+2020-05-08T04:50:40.9335333Z 54180f302435: Waiting
+2020-05-08T04:50:40.9335473Z dcf5ae09f64e: Waiting
+2020-05-08T04:50:40.9958365Z f11b29a9c730: Download complete
+2020-05-08T04:50:40.9989783Z 930bda195c84: Verifying Checksum
+2020-05-08T04:50:40.9994698Z 930bda195c84: Download complete
+2020-05-08T04:50:41.0844165Z 78bf9a5ad49e: Verifying Checksum
+2020-05-08T04:50:41.0844434Z 78bf9a5ad49e: Download complete
+2020-05-08T04:50:41.2369358Z 5bed26d33875: Verifying Checksum
+2020-05-08T04:50:41.2371608Z 5bed26d33875: Download complete
+2020-05-08T04:50:41.4820018Z dcf5ae09f64e: Verifying Checksum
+2020-05-08T04:50:41.4886933Z dcf5ae09f64e: Download complete
+2020-05-08T04:50:42.3714817Z 54180f302435: Verifying Checksum
+2020-05-08T04:50:42.3715521Z 54180f302435: Download complete
+2020-05-08T04:50:42.4364359Z e27d61588c18: Verifying Checksum
+2020-05-08T04:50:42.4377545Z e27d61588c18: Download complete
+2020-05-08T04:50:42.9531698Z 5bed26d33875: Pull complete
+2020-05-08T04:50:43.0112196Z f11b29a9c730: Pull complete
+2020-05-08T04:50:43.0505553Z 930bda195c84: Pull complete
+2020-05-08T04:50:43.0880609Z 78bf9a5ad49e: Pull complete
+2020-05-08T04:50:48.8637661Z e27d61588c18: Pull complete
+2020-05-08T04:50:52.9560094Z 54180f302435: Pull complete
+2020-05-08T04:50:52.9939602Z dcf5ae09f64e: Pull complete
+2020-05-08T04:50:52.9982365Z Digest: sha256:97cee0d6e90bf998f9a2eddd950eb08e34a8522692f7a92c6f783512a3941ee2
+2020-05-08T04:50:53.0011042Z Status: Downloaded newer image for crystallang/crystal:0.34.0-build
+2020-05-08T04:50:53.0027092Z docker.io/crystallang/crystal:0.34.0-build
+2020-05-08T04:50:53.0051173Z ##[command]/usr/bin/docker create --name 9b107fa6bb7c48be83699dc259e91bef_crystallangcrystal0340build_150408 --label c27d31 --workdir /__w/crystal/crystal --network github_network_a93b7c5c24d7434883547ea4e60b5328  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/runners/2.169.1/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" crystallang/crystal:0.34.0-build "-f" "/dev/null"
+2020-05-08T04:51:01.7639733Z e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:51:01.7696815Z ##[command]/usr/bin/docker start e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:51:02.3177460Z e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:51:02.3214341Z ##[command]/usr/bin/docker ps --all --filter id=e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2020-05-08T04:51:02.3469923Z e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698 Up Less than a second
+2020-05-08T04:51:02.3486916Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:51:02.3738213Z HOME=/github/home
+2020-05-08T04:51:02.3739033Z GITHUB_ACTIONS=true
+2020-05-08T04:51:02.3739358Z CI=true
+2020-05-08T04:51:02.3740100Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2020-05-08T04:51:02.3740286Z LIBRARY_PATH=/usr/lib/crystal/lib/
+2020-05-08T04:51:02.3890367Z ##[group]Run actions/checkout@v2
+2020-05-08T04:51:02.3890626Z with:
+2020-05-08T04:51:02.3890835Z   repository: anathaedra/crystal
+2020-05-08T04:51:02.3891091Z   token: ***
+2020-05-08T04:51:02.3891195Z   ssh-strict: true
+2020-05-08T04:51:02.3891281Z   persist-credentials: true
+2020-05-08T04:51:02.3891394Z   clean: true
+2020-05-08T04:51:02.3891491Z   fetch-depth: 1
+2020-05-08T04:51:02.3891588Z   lfs: false
+2020-05-08T04:51:02.3891671Z   submodules: false
+2020-05-08T04:51:02.3891774Z ##[endgroup]
+2020-05-08T04:51:02.3905618Z ##[command]/usr/bin/docker exec  e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698 sh -c "cat /etc/*release | grep ^ID"
+2020-05-08T04:51:02.6595953Z Running JavaScript Action with default external tool: node12
+2020-05-08T04:51:03.3441778Z Syncing repository: anathaedra/crystal
+2020-05-08T04:51:03.3442180Z ##[group]Getting Git version info
+2020-05-08T04:51:03.3442809Z Working directory is '/__w/crystal/crystal'
+2020-05-08T04:51:03.3443258Z [command]/usr/bin/git version
+2020-05-08T04:51:03.3443375Z git version 2.17.1
+2020-05-08T04:51:03.3466077Z ##[endgroup]
+2020-05-08T04:51:03.3471843Z Deleting the contents of '/__w/crystal/crystal'
+2020-05-08T04:51:03.3478171Z The repository will be downloaded using the GitHub REST API
+2020-05-08T04:51:03.3478955Z To create a local Git repository instead, add Git 2.18 or higher to the PATH
+2020-05-08T04:51:03.3486535Z Downloading the archive
+2020-05-08T04:51:04.0220121Z Writing archive to disk
+2020-05-08T04:51:04.0326867Z Extracting the archive
+2020-05-08T04:51:04.0329401Z [command]/bin/tar xz -C /__w/crystal/crystal/7c709640-eca9-4193-9ccf-13c7a7fca548 -f /__w/crystal/crystal/7c709640-eca9-4193-9ccf-13c7a7fca548.tar.gz
+2020-05-08T04:51:04.1406693Z Resolved version anathaedra-crystal-845c88c
+2020-05-08T04:51:04.1984172Z ##[group]Run make deps
+2020-05-08T04:51:04.1984373Z [36;1mmake deps[0m
+2020-05-08T04:51:04.1986518Z shell: sh -e {0}
+2020-05-08T04:51:04.1986631Z ##[endgroup]
+2020-05-08T04:51:04.5112880Z [33mUsing /usr/bin/llvm-config-8 [version=8.0.0][0m
+2020-05-08T04:51:04.5141685Z g++ -c  -o src/llvm/ext/llvm_ext.o src/llvm/ext/llvm_ext.cc -I/usr/lib/llvm-8/include -std=c++11  -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+2020-05-08T04:51:07.8321488Z cc -fPIC    -c -o src/ext/sigfault.o src/ext/sigfault.c
+2020-05-08T04:51:07.8676946Z ar -rcs src/ext/libcrystal.a src/ext/sigfault.o
+2020-05-08T04:51:07.9073405Z ##[group]Run LLVM_TARGETS=X86 bin/crystal build --cross-compile --target x86_64-pc-windows-msvc src/compiler/crystal.cr -Dwithout_playground
+2020-05-08T04:51:07.9073646Z [36;1mLLVM_TARGETS=X86 bin/crystal build --cross-compile --target x86_64-pc-windows-msvc src/compiler/crystal.cr -Dwithout_playground[0m
+2020-05-08T04:51:07.9074030Z shell: sh -e {0}
+2020-05-08T04:51:07.9074134Z ##[endgroup]
+2020-05-08T04:52:29.6166953Z cl "crystal.o" "/Fecrystal"  /__w/crystal/crystal/src/llvm/ext/llvm_ext.o `"/usr/bin/llvm-config-8" --libs --system-libs --ldflags` pcre.lib gc.lib advapi32.lib legacy_stdio_definitions.lib libcmt.lib 
+2020-05-08T04:52:29.7073009Z ##[group]Run actions/upload-artifact@v1
+2020-05-08T04:52:29.7073128Z with:
+2020-05-08T04:52:29.7073237Z   name: objs
+2020-05-08T04:52:29.7073338Z   path: crystal.o
+2020-05-08T04:52:29.7073422Z ##[endgroup]
+2020-05-08T04:52:29.9343302Z Uploading artifact 'objs' from '/home/runner/work/crystal/crystal/crystal.o' for run #1
+2020-05-08T04:52:30.0143086Z Uploading 1 files
+2020-05-08T04:52:34.2060299Z File upload complete.
+2020-05-08T04:52:34.2065422Z Uploaded '35086341' bytes from '/home/runner/work/crystal/crystal/crystal.o' to server
+2020-05-08T04:52:34.4207628Z Associated artifact objs (2253755) with run #1
+2020-05-08T04:52:34.4315394Z Post job cleanup.
+2020-05-08T04:52:34.4318468Z ##[command]/usr/bin/docker exec  e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698 sh -c "cat /etc/*release | grep ^ID"
+2020-05-08T04:52:34.6995897Z Running JavaScript Action with default external tool: node12
+2020-05-08T04:52:35.0648299Z Stop and remove container: 9b107fa6bb7c48be83699dc259e91bef_crystallangcrystal0340build_150408
+2020-05-08T04:52:35.0651187Z ##[command]/usr/bin/docker rm --force e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:52:35.7610023Z e65496a8de560921e54dfb4ede0a159c63b04334887f24ea3e8d678de2d4f698
+2020-05-08T04:52:35.7634826Z Remove container network: github_network_a93b7c5c24d7434883547ea4e60b5328
+2020-05-08T04:52:35.7637938Z ##[command]/usr/bin/docker network rm github_network_a93b7c5c24d7434883547ea4e60b5328
+2020-05-08T04:52:35.8859481Z github_network_a93b7c5c24d7434883547ea4e60b5328
+2020-05-08T04:52:35.8888341Z Cleaning up orphan processes

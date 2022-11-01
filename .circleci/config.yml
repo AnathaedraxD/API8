@@ -15,8 +15,8 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - restore_cache:
-          keys:
+      - restore_cache:app.circleci.com/settings/project/github/AnathaedraxD/API8/environment-variables
+         j keys:
             - go-mod-v4-{{ checksum "go.sum" }}
       - run:
           name: Install Dependencies

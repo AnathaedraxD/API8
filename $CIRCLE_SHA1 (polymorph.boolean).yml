@@ -1,0 +1,114 @@
+description: |
+  Scan your docker images for vulnerabilities
+parameters:
+  extra-docker-parameters:
+    default: ''
+    description: >-
+      Additional parameters added to the docker command when executing the
+      secure-inline-scan container execution.
+    type: string
+  extra-parameters:
+    default: ''
+    description: Additional parameters added to the secure-inline-scan container execution.
+    type: string
+  ignore-failed-scan:
+    default: false
+    description: >-
+      Don't fail the execution of this workflow even if the scan result is
+      FAILED.
+    type: boolean
+  image-tag:
+    description: Tag of the image to analyse.
+    type: string
+  input-path:
+    default: ''
+    description: Path to the docker socket. It must be an absolute path.
+    type: string
+  input-type:
+    default: pull
+    description: |
+      If specified, where should we scan the image from. Possible values:
+        pull            Pull the image from the registry.
+                        Default if not specified.
+        docker-daemon   Get the image from the Docker daemon.
+                        The docker socket must be available.
+                        The default path is /var/run/docker.sock, but can be configured
+                        setting up the 'input-path'.
+    type: string
+  run-as-user:
+    default: ''
+    description: >
+      Run the scan container with this username or UID.
+
+      It might required if scanning from docker-daemon or cri-o to provide a
+      user with permissions on the socket or storage.
+    type: string
+  secure-inline-scan-image:
+    default: 'quay.io/sysdig/secure-inline-scan:2'
+    description: Sysdig Secure Inline Scan image service
+    type: string
+  sysdig-secure-token:
+    default: SYSDIG_SECURE_TOKEN
+    description: API token for Sysdig Scanning auth.
+    type: env_var_name
+  sysdig-secure-url:
+    default: 'https://secure.sysdig.com'
+    description: 'Sysdig Secure URL (ex: "https://secure-sysdig.com").'
+    type: string
+  sysdig-skip-tls:
+    default: false
+    description: Skip TLS verification when calling secure endpoints.
+    type: boolean
+steps:
+  - run:
+      command: docker pull <<parameters.secure-inline-scan-image>>
+      name: Pull Secure Inline Scan image
+  - when:
+      condition:
+        equal:
+          - <<parameters.input-type>>
+          - pull
+      steps:
+        - run:
+            command: >
+              docker run -ti --rm -e
+              SYSDIG_API_TOKEN=${<<parameters.sysdig-secure-token>>}
+              <<#parameters.run-as-user>>-u
+              <<parameters.run-as-user>><</parameters.run-as-user>>
+              <<#parameters.extra-docker-parameters>><<parameters.extra-docker-parameters>><</parameters.extra-docker-parameters>>
+              <<parameters.secure-inline-scan-image>> -v --sysdig-url
+              <<parameters.sysdig-secure-url>>
+              <<#parameters.sysdig-skip-tls>>--sysdig-skip-tls<</parameters.sysdig-skip-tls>>
+              <<#parameters.extra-parameters>><<parameters.extra-parameters>><</parameters.extra-parameters>>
+              <<parameters.image-tag>> <<#parameters.ignore-failed-scan>> ||
+              true <</parameters.ignore-failed-scan>>
+            name: >-
+              Execute Secure Inline Scan image (mode:
+              "<<parameters.input-type>>")
+  - when:
+      condition:
+        equal:
+          - <<parameters.input-type>>
+          - docker-daemon
+      steps:
+        - run:
+            command: >
+              docker run -ti --rm -e
+              SYSDIG_API_TOKEN=${<<parameters.sysdig-secure-token>>}
+              <<#parameters.run-as-user>>-u
+              <<parameters.run-as-user>><</parameters.run-as-user>>
+              <<#parameters.input-path>>-v
+              <<parameters.input-path>>:/var/run/docker.sock<</parameters.input-path>>
+              <<^parameters.input-path>>-v
+              /var/run/docker.sock:/var/run/docker.sock<</parameters.input-path>>
+              <<#parameters.extra-docker-parameters>><<parameters.extra-docker-parameters>><</parameters.extra-docker-parameters>>
+              <<parameters.secure-inline-scan-image>> -v --sysdig-url
+              <<parameters.sysdig-secure-url>>
+              <<#parameters.sysdig-skip-tls>>--sysdig-skip-tls<</parameters.sysdig-skip-tls>>
+              <<#parameters.extra-parameters>><<parameters.extra-parameters>><</parameters.extra-parameters>>
+              --storage-type=<<parameters.input-type>> <<parameters.image-tag>>
+              <<#parameters.ignore-failed-scan>> || true
+              <</parameters.ignore-failed-scan>>
+            name: >-
+              Execute Secure Inline Scan image (mode:
+              "<<parameters.input-type>>")
